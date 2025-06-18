@@ -1,0 +1,25 @@
+.hero-shop-button::before {
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0 0 50% 0;
+    background-color: transparent;
+    top: 0;
+    right: 0;
+    transform: translate(0, -100%);
+    box-shadow: 10px 10px 0 white;
+}
+
+.hero-shop-button::after {
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0 0 50% 0;
+    background-color: transparent;
+    bottom: 0;
+    left: 0;
+    transform: translate(-100%, 0%);
+    box-shadow: 10px 10px 0 white;
+}
