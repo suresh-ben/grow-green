@@ -6,11 +6,6 @@ const overlock = Overlock({
     subsets: ["latin"],
 });
 
-const overlock_bold = Overlock({
-    weight: "700",
-    subsets: ["latin"],
-});
-
 const overlock_superbold = Overlock({
     weight: "900",
     subsets: ["latin"],

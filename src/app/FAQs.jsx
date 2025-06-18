@@ -1,18 +1,11 @@
 "use client";
 import React, { useState } from "react";
-
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Overlock } from "next/font/google";
-import { div } from "framer-motion/client";
 
 const overlock = Overlock({
     weight: "400",
-    subsets: ["latin"],
-});
-
-const overlock_bold = Overlock({
-    weight: "700",
     subsets: ["latin"],
 });
 
