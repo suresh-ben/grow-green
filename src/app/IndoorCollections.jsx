@@ -73,6 +73,12 @@ export default function IndoorCollections() {
                         <div
                             key={data.img}
                             className={`bg-white rounded-4xl p-3 relative group cursor-pointer ${data.width} h-[20rem] relative overflow-hidden group cursor-pointer`}
+                            style={{
+                                backgroundImage: `url('/${data.img}_t.jpg')`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                backgroundRepeat: 'no-repeat'
+                            }}
                         >
                             <Image 
                                 className="object-cover"

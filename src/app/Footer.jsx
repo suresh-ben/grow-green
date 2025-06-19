@@ -20,15 +20,23 @@ const overlock_superbold = Overlock({
 
 export default function Footer() {
     return (
-        <div className="h-[40rem] relative">
+        <div 
+            className="h-[40rem] relative m-4 rounded-4xl"
+            style={{
+                backgroundImage: `url('/join-us_t.jpg')`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat'
+            }}
+        >
             <Image
-                className="object-cover p-4 rounded-4xl"
+                className="object-cover rounded-4xl"
                 src="/join-us.jpg"
                 alt="Join us"
                 fill
             />
 
-            <div className="absolute top-0 left-0 right-0 bottom-0 p-4">
+            <div className="absolute top-0 left-0 right-0 bottom-0">
                 <div className="bg-black/50 rounded-4xl w-full h-full" />
             </div>
 
@@ -39,7 +47,15 @@ export default function Footer() {
                         <div className="w-[3.5rem]" />
                         <div className="border-t border-white flex-1" />
                     </div>
-                    <div className="h-[3.5rem] w-[3.5rem] relative">
+                    <div 
+                        className="h-[3.5rem] w-[3.5rem] relative"
+                        style={{
+                            backgroundImage: `url('/logo_t.png')`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundRepeat: 'no-repeat'
+                        }}
+                    >
                         <Image
                             src="/logo.png"
                             alt="Logo"
@@ -70,9 +86,6 @@ export default function Footer() {
                 <div className="bg-white p-10 rounded-4xl mt-8 ">
                     <motion.div
                         className="flex gap-2 mb-8 justify-center items-center"
-                        initial={{ opacity: 0.5, x: 100 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.5 }}
                     >
                         <FooterButton 
                             label={"Instagram"}

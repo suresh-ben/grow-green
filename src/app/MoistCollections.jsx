@@ -63,7 +63,15 @@ export default function MoistCollections() {
                             key={data.img}
                             className="flex-1/3 bg-white rounded-4xl p-3 relative group cursor-pointer"
                         >
-                            <div className="relative w-full aspect-[5/3] overflow-hidden rounded-[1.5rem]">
+                            <div 
+                                className="relative w-full aspect-[5/3] overflow-hidden rounded-[1.5rem]"
+                                style={{
+                                    backgroundImage: `url('/${data.img}_t.jpg')`,
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'center',
+                                    backgroundRepeat: 'no-repeat'
+                                }}
+                            >
                                 <Image
                                     className="object-cover rounded-[1.5rem] group-hover::transform group-hover:scale-110 transition-all duration-300 ease-in-out"
                                     src={`/${data.img}.jpg`}

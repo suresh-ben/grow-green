@@ -20,7 +20,7 @@ const overlock_superbold = Overlock({
 
 export default function Section2() {
     return (
-        <div className={`${overlock.className} mt-15`}>
+        <div className={`${overlock.className} pt-15 relative z-50 bg-[#f2f2f2]`}>
             <div className="flex justify-center items-center">
                 <div className="flex p-10 gap-6 justify-center items-center">
                     <div className="w-[20rem]">
@@ -44,6 +44,13 @@ export default function Section2() {
                             width="100%"
                             src={"/plants_01.mp4"}
                             className="rounded-4xl"
+
+                            style={{
+                                backgroundImage: `url('/plants_01_thumb.jpg')`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                backgroundRepeat: 'no-repeat'
+                            }}
                         />
 
                         <div className="absolute top-[50%] -right-[.25rem] bg-white translate-y-[-50%] rounded-full p-[.25rem]">
@@ -63,7 +70,15 @@ export default function Section2() {
                     >
                         <div className={`flex gap-2 items-center`}>
                             <p className="">Each plant is cared </p>
-                            <div className="w-[7rem] h-[2.25rem] relative rounded-full overflow-hidden">
+                            <div 
+                                className="w-[7rem] h-[2.25rem] relative rounded-full overflow-hidden"
+                                style={{
+                                    backgroundImage: `url('/plants_01_t.jpg')`,
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'center',
+                                    backgroundRepeat: 'no-repeat'
+                                }}
+                            >
                                 <Image
                                     className="object-cover"
                                     src="/plants_01.jpg"

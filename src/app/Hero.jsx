@@ -22,7 +22,14 @@ const overlock_superbold = Overlock({
 export default function Hero() {
     return (
         <div className="relative">
-            <div className="absolute w-screen h-screen">
+            <div className="absolute w-screen h-screen"
+                style={{
+                    backgroundImage: `url('/hero-background_t.jpg')`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat'
+                }}
+            >
                 <Image
                     className="rounded-b-4xl"
                     src="/hero-background.jpg"
@@ -42,7 +49,14 @@ export default function Hero() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5 }}
                     >
-                        <div className="relative aspect-square h-[3rem]">
+                        <div className="relative aspect-square h-[3rem]"
+                            style={{
+                                backgroundImage: `url('/logo_t.png')`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                backgroundRepeat: 'no-repeat'
+                            }}
+                        >
                             <Image src="/logo.png" alt="Logo" fill priority />
                         </div>
                     </motion.div>
@@ -123,7 +137,7 @@ export default function Hero() {
                         <div className="h-[4rem] w-[4rem] relative rounded-full border-white border overflow-hidden">
                             <Image
                                 className=""
-                                src="/plants_01.jpg"
+                                src="/plants_01_t.jpg"
                                 alt="Plants_01"
                                 fill
                             />
@@ -131,7 +145,7 @@ export default function Hero() {
                         <div className="h-[4rem] w-[4rem] relative rounded-full border-white border overflow-hidden -mt-[2rem]">
                             <Image
                                 className=""
-                                src="/plants_02.jpg"
+                                src="/plants_02_t.jpg"
                                 alt="Plants_01"
                                 fill
                             />
@@ -139,7 +153,7 @@ export default function Hero() {
                         <div className="h-[4rem] w-[4rem] relative rounded-full border-white border overflow-hidden -mt-[2rem]">
                             <Image
                                 className=""
-                                src="/plants_03.jpg"
+                                src="/plants_03_t.jpg"
                                 alt="Plants_01"
                                 fill
                             />

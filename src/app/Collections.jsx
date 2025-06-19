@@ -49,7 +49,15 @@ export default function Collections() {
                         }}
                         transition={{ duration: 0.5, ease: "easeInOut" }}
                     >
-                        <div className="relative w-full h-full">
+                        <div 
+                            className="relative w-full h-full rounded-4xl"
+                            style={{
+                                backgroundImage: `url('/${data.img}_t.jpg')`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                backgroundRepeat: 'no-repeat'
+                            }}
+                        >
                             <Image
                                 className="rounded-4xl object-cover"
                                 src={`/${data.img}.jpg`}
@@ -91,8 +99,11 @@ export default function Collections() {
                                     <div
                                         className="relative h-[3rem] w-[3rem] rounded-full"
                                         style={{
-                                            backgroundColor:
-                                                "rgba(255,255,255,0.25)",
+                                            backgroundColor: "rgba(255,255,255,0.25)",
+                                            backgroundImage: `url('/logo_t.png')`,
+                                            backgroundSize: 'cover',
+                                            backgroundPosition: 'center',
+                                            backgroundRepeat: 'no-repeat'
                                         }}
                                     >
                                         <Image

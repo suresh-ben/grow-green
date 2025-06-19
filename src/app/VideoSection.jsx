@@ -1,5 +1,6 @@
 import React from "react";
 import { Overlock } from "next/font/google";
+import Image from "next/image";
 
 const overlock = Overlock({
     weight: "400",
@@ -26,9 +27,23 @@ export default function VideoSection() {
                 terrariums, landscapes, arrangements, vessels and holders.
             </p>
 
-            <div className="flex justify-center items-center px-[20%] mb-20">
+            <div 
+                className="flex justify-center items-center mx-[20%] mb-20 aspect-[1366/720] rounded-4xl relative"
+                style={{
+                    backgroundImage: `url('/gardening_thumb_t.jpg')`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat'
+                }}
+            >
+                <Image 
+                    className="object-cover rounded-4xl"
+                    src="/gardening_thumb.jpg"
+                    alt="Gardening"
+                    fill
+                />
                 <video
-                    className="rounded-4xl"
+                    className="rounded-4xl relative z-50"
                     src="/gardening.mp4"
                     autoPlay={true}
                     loop={true}
